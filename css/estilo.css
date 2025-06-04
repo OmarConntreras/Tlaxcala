@@ -1,0 +1,152 @@
+body{
+	background-size: 100%;
+	background-color: #739eb4;
+	font-size: 15px;
+}
+.contenido {
+	font-family: Verdana;
+	text-align: center;
+    text-align: justify;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+}
+
+.contenido p {
+	font-family: Verdana;
+    text-align: center
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.imagen-centro {
+    display: block;
+    margin: 0 auto 15px auto;
+    width: 250px; /* Puedes ajustar el tamaño */
+}
+
+header{
+	font-family: Verdana;
+	background-color: #53646d; /*color de fondo de esta caja */
+	color: white; /*color de texto */
+	text-align: center; /*alineacion del texto centrado */
+	padding: 5px;
+	font-size: 2em;
+	width: 100%;
+}
+
+nav{
+	font-family: Verdana;
+	line-height: 30px;
+	background-color: #53646d; /*color de fondo del nav con ese codigo hexadecimal */
+	color: white;
+	height: 600px; /*altura de la caja nav	 */
+	float: left; /*flote a la izquierda */
+	padding: 5px;
+	font-size: 1em; /*tamaño de las letter */
+	text-decoration: none;
+	margin: 20px;
+	width: 20%;
+}
+
+nav a:hover{
+
+	/*estoy configurando los enlaces cuando los clickeo */
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+section{
+	width: 40%;
+	float: left;
+	
+	color: white;
+	text-align: justify;
+	font-size: 1em;
+	padding: 0px 0px 0px 0px;
+	.contenido {
+  text-align: center;
+  padding: 20px;
+}
+}
+
+footer
+{
+	background-color: #53646d;
+	color: white;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+	width: 100%;
+}
+img{
+	display: block;
+	margin: auto;
+	clear: right;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+main .fondo{
+	text-align: center;
+	width: 40%;
+}
+
+
+main .fondo img{
+	max-width: 40%;
+	height: auto;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: transform 0.3s ease;
+}
+main .fondo img:hover{
+	//que cuando le paso el mouse por encima a las img
+	transform: scale(1.05);
+}
+
+@media  (max-width: 600px) {
+	body{
+		background-color: darkred;
+		
+	}
+
+	nav{
+		line-height: 30px;
+		background-color: black; /*color de fondo del nav con ese codigo hexadecimal */
+		color: pink;
+		height: 400px; /*altura de la caja nav	 */
+		float: left; /*flote a la izquierda */
+		padding: 5px;
+		font-size: 0.5em; /*tamaño de las letter */
+		text-decoration: none;
+		margin: 20px;
+		width: 20%;
+	}
+
+	main .fondo{
+		text-align: center;
+		width: 20%;
+		flex-direction: column;
+		font-size: 0.5em;
+
+	}
+	main .fondo img{
+		width: 60%;
+		height: auto;
+		
+	}
+
+	header{
+		font-size: 1em;
+	}
+
+	footer {
+		font-family: Verdana;
+		font-size: 0.6em;
+
+	}
+
+}
